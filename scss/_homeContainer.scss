@@ -1,0 +1,87 @@
+.home-container {
+    height           : calc(100vh - 3em);
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+}
+
+.home-data {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.home-img {
+    padding-top     : -0.3rem;
+    padding-left    : .2rem;
+    width           : 10rem;
+    height          : 10rem;
+    background-color: $first-color;
+    border-radius   : 50%;
+    overflow        : hidden;
+    margin-bottom   : $mb-2;
+
+    img {
+        margin-top: -10px;
+        width     : 9.6875rem;
+    }
+}
+
+.home-title {
+    font-size  : $h1-font-size;
+    color      : $first-color;
+    font-weight: $font-semi-bold;
+}
+
+.home-profession {
+    font-size    : $small-font-size;
+    color        : $first-color-dark;
+    margin-bottom: $mb-5;
+}
+
+.home-social {
+    margin-bottom: 5rem;
+}
+
+.home-button {
+    width     : 100%;
+    text-align: center;
+}
+
+.home-social-link {
+    display         : inline-flex;
+    background-color: $first-color;
+    color           : $first-color-lighten;
+    font-size       : 1.1rem;
+    border-radius   : 50%;
+    padding         : 0.4rem;
+    margin          : 0 $mb-1;
+    transition      : .3s;
+
+    &:hover {
+        background-color: $first-color-dark;
+    }
+}
+
+.button {
+    display         : inline-block;
+    background-color: $first-color;
+    color           : $first-color-lighten;
+    padding         : 1rem 2rem;
+    font-weight     : $font-semi-bold;
+    border-radius   : .5rem;
+    transition      : .3s;
+
+    &:hover {
+        background-color: $first-color-dark;
+    }
+}
+
+.button-light {
+    background-color: $first-color-lighten;
+    color           : $first-color;
+
+    &:hover {
+        color: $first-color-lighten;
+    }
+}

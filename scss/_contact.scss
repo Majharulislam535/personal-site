@@ -1,0 +1,43 @@
+.contact-container{
+    row-gap: 3rem;
+}
+.contact-input{
+    width: 100%;
+    padding:1rem;
+    outline: none;
+    border: none;
+    background-color:$first-color-light;
+    font-size: $normal-font-size;
+    margin-bottom: $mb-2;
+    border-radius: .5rem;
+
+}
+
+.contact-input::placeholder{
+    font-weight: $font-medium;
+    color: $first-color-dark;
+}
+
+
+.contact-button{
+    border: none;
+    outline:none;
+    font-size: $normal-font-size;
+    cursor: pointer;
+}
+
+.contact-info{
+    margin-bottom: $mb-3;
+
+}
+
+.contact-subtilte{
+    font-size: $h3-font-size;
+    color: $first-color-dark;
+    margin-bottom: $mb-1;
+}
+
+.contact-text{
+    display: block;
+    padding-left: 1rem;
+}

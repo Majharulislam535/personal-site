@@ -1,0 +1,38 @@
+ .footer{
+     background-color:$first-color-darken;
+     color:$first-color-lighten;
+     text-align: center;
+ }
+ .footer-title{
+     font-size: $h1-font-size;
+     margin-bottom: $mb-2;
+ }
+
+ .footer-description{
+     margin-bottom: $mb-2;
+ }
+
+ .footer-social{
+     margin-bottom: 3rem;
+ }
+
+ .footer-link{
+     display: inline-flex;
+     background-color: $first-color;
+     color: $first-color-lighten;
+     font-size:1.1rem;
+     border-radius: 50%;
+     padding: 0.40rem;
+     margin: 0 $mb-1;
+     transition: .3s;
+ }
+
+ .footer-link:hover{
+     background-color:$first-color-lighten;
+     color: $first-color;
+ }
+
+ .footer-copy{
+     font-size:$small-font-size;
+     color:$text-color;
+ }

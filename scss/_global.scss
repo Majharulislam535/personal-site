@@ -1,0 +1,147 @@
+@import 'variable';
+
+*,
+ *::after,
+ *::before {
+     box-sizing: border-box;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     margin     : 0;
+     padding    : 0;
+     font-size: $normal-font-size;
+     font-weight: $font-medium;
+     background-color:$first-color-lighten;
+ }
+
+ .active{
+    color: $text-color !important;
+}
+
+ h1,h2,h3,p{
+     margin: 0;
+ }
+
+ h3{
+     font-weight: $font-semi-bold;
+ }
+
+ ul{
+     margin:0;
+     padding: 0;
+     list-style: none;
+ }
+
+ a{
+     text-decoration: none;
+     color: $text-color;
+ }
+
+ img{
+     max-width: 100%;
+     display: block;
+     height: auto;
+ }
+
+.section{
+    padding:4rem 0rem 2rem;
+}
+
+.section-title{
+     font-size: $h1-font-size;
+     color: $first-color;
+     margin-bottom: $mb-3;
+     text-align: center;
+}
+.section-subtitle{
+    display:block;
+    font-size: $small-font-size;
+    color:$first-color-darken;
+    text-align: center;
+    font-weight: $font-bold;
+    margin-bottom: .25rem;
+}
+
+
+/// layout  
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: $z-fixed;
+    background-color:$first-color-lighten;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.1);
+}
+
+
+.bd-grid{
+    max-width:64rem;
+    display:grid;
+    grid-template-columns:100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: $mb-2;
+    margin-right: $mb-2;
+}
+
+.nav{
+    height: $header-height;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    position:fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height:100vh;
+    padding: 3rem;
+    display:flex;
+    align-items: center;
+    background-color: $first-color;
+    transition: .5s;
+}
+
+.nav-close{
+    position:absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: $first-color-dark;
+    cursor:pointer;
+}
+
+.nav-items{
+    margin-bottom: $mb-4;
+}
+
+.nav-link{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:$first-color-lighten;
+    font-weight: $font-bold;
+    transition:.3s;
+    &:hover{
+        color: $text-color;
+    }
+}
+.nav-toggle{
+    color: $first-color-dark;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+.show{
+    left: 0;
+}
+

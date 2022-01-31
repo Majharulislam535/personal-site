@@ -1,0 +1,24 @@
+.project{
+    background-color: $first-color;
+    padding-bottom: 0;
+}
+
+.project-container{
+    row-gap: 2rem;
+}
+
+.project-data{
+    text-align: center;
+}
+.project-title,.project-description{
+    color: $first-color-lighten;
+}
+
+.project-description{
+    margin-bottom: $mb-4;
+}
+
+.project-img{
+    width: 13.75rem;
+    justify-self: center;
+}

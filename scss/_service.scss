@@ -1,0 +1,48 @@
+
+.service-container{
+    row-gap: 2rem;
+}
+
+.service-content{
+    padding:1.5rem .5rem;
+    border: 2px solid $first-color;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.service-icon{
+    background-color: $first-color;
+    color: $first-color-lighten;
+    font-size: 2rem;
+    padding:.5rem;
+    border-radius: 50%;
+    margin-bottom: $mb-2;
+}
+
+.service-title{
+    font-size: 1.25rem;
+    color: $first-color-dark;
+    margin-bottom: $mb-1;
+
+}
+
+
+.service-content,.service-description,.service-icon,.service-title{
+    transition: .5s;
+}
+
+.service-content:hover{
+    background-color:$first-color;
+}
+
+.service-content:hover .service-icon{
+    background-color:$first-color-lighten;
+    color: $first-color;
+}
+
+.service-content:hover .service-title{
+    color:$first-color-lighten;
+}
+.service-content:hover .service-description{
+    color:$first-color-lighten;
+}

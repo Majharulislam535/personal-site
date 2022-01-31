@@ -1,0 +1,111 @@
+@media only screen and(min-width:48rem) {
+    $h1-font-size:2.25rem;
+    $h2-font-size:1.5rem;
+    $h3-font-size:1.25rem;
+    $normal-font-size:1rem;
+    $small-font-size:.875rem;
+    $smaller-font-size:.813rem;
+}
+
+@media only screen and(min-width:48rem){
+    .home-button{
+        width: auto;
+        width: initial !important;
+    }
+   .nav-menu{
+       width: $nav-width;
+   }
+    
+   .about-container,
+   .skills-container,
+    .service-container,
+    .works-container,
+    .contact-container,
+    .contact-inputs{
+       grid-template-columns: repeat(2,1fr);
+   }
+   .about-data{
+       text-align: initial;
+   }
+   .about-description{
+       margin-bottom: $mb-5;
+   }
+
+   .about-img{
+       width: 13.75rem;
+   }
+   .about-information{
+       padding-left: 4rem;
+   }
+   .project{
+       background: none !important;
+   }
+
+   .project-container{
+        background-color:$first-color;
+        grid-template-columns:2fr 1.2fr !important;
+        padding:0 2rem !important;
+        border-radius: .5rem !important;
+   }
+   .project-data{
+       padding:3rem 0;
+   }
+
+   .project-title,.project-data{
+       text-align: initial;
+   }
+   .project-img{
+       width: 14.375rem;
+       align-self: flex-end;
+   }
+
+   .contact-inputs{
+       display: grid;
+       column-gap:1.5rem ;
+
+   }
+   .contact-info{
+       padding-left: 3rem;
+   }
+   .footer{
+       background:none !important;
+   }
+   .footer-container{
+       background-color:$first-color-darken;
+       padding: 3rem 0;
+       border-radius: .5rem;
+
+   }
+}
+
+
+
+@media only screen and(min-width:64rem) {
+     body{
+         margin: 0;
+         padding-left: $nav-width;
+     }
+     .l-header{
+         width: 0;
+     }
+     .nav-toggle,.nav-logo,.nav-close{
+         display:none;
+     }
+     .nav-menu{
+         left:0;
+     }
+     .home-container{
+         height: 100vh;
+     }
+     .section{
+         padding:3rem 0 2rem;
+     }
+     .bd-grid{
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .service-container,
+     .works-container{
+         grid-template-columns: repeat(3,1fr);
+     }
+}
